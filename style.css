@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Police */
+#entete {
+  font-family: "dancing", cursive;
+}
+/* Général */
+main {
+  background-image: url(./images/fond_jaune.png);
+}
+/* header */
+header {
+  width: 95%;
+  display: flex;
+}
+#entete {
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+#logo {
+  width: 20%;
+  height: 200px;
+  display: flex;
+}
+#entete h2 {
+  font-size: 5em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-image: url(./images/terrain-de-squash-1.jpg);
+}
