@@ -8,10 +8,11 @@
 </head>
 
 <body>
+    <header>
+        <?php include_once('./header.php'); ?>
+    </header>
     <main>
-        <header>
-            <?php include_once('./header.php'); ?>
-        </header>
+
         <?php
 
         include_once('./conexionbdb.php');
@@ -28,19 +29,24 @@
             </article>
 
             <aside>
-
+                <ul>
+                    <li><a href="">Les régles simplifiées</a></li>
+                    <li><a href="./lesBalles.php">Les balles</a></li>
+                    <li><a href="">Nos infrastructures</a></li>
+                    <li><a href="">Réservé un terrain</a></li>
+                </ul>
 
 
             </aside>
 
         </section>
 
-        <footer>
-            <?php include_once('./footer.php'); ?>
-        </footer>
+
 
     </main>
-
+    <footer>
+        <?php include_once('./footer.php'); ?>
+    </footer>
 </body>
 
 </html>

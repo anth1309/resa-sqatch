@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="./style.css">
-<div id=>
+<div>
+    <p>© Chambon Anthony</p>
 
+    <p><a href="./mentions_legales.php">Mentions legales</a></p>
 </div>
