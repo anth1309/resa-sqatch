@@ -9,30 +9,32 @@
             <a class='retourAcceuil' href="./index.php">Retour a l'accueil</a>
 
             <h1>Quelle est la signification des points sur les balles de Squash ?</h1>
+            <img src="./images/balles-de-squash.jpeg" alt="balle de squash">
 
             <p>Contrairement au Tennis, les balles de squash adultes sont plus petites et sont toujours noires avec un ou deux points de colorés. A l’intérieur de cette balle en caoutchouc, de l’air est enfermé avec une pression différente. Il existe 6 types de balles de squash dont 4 principales, qui se distinguent par rapport à la couleur de leur point. Les points marqués sur la balle correspondent à la différence de taille et de rebond de la balle. Les balles de squash sont disponibles avec différents rebonds pour s’adapter à votre niveau de jeu et votre condition physique. La particularité des balles de squash, c’est qu’il faut que la balle soit chauffée à une certaine température pour que le niveau de rebond soit optimal.</p>
             <p>
             <h2> bleu</h2>
-
-            Les balles de squash avec un point de couleur bleu sont celles qui ont le rebond le plus haut. Très rapides, ces balles sont utilisées pour découvrir ce sport et sont donc plutôt destinées à des joueurs novices pour l’initiation au squash. L’avantage contrairement aux autres points c’est qu’elles être utilisées directement sans préchauffage.</p>
             <p>
+                Les balles de squash avec un point de couleur bleu sont celles qui ont le rebond le plus haut. Très rapides, ces balles sont utilisées pour découvrir ce sport et sont donc plutôt destinées à des joueurs novices pour l’initiation au squash. L’avantage contrairement aux autres points c’est qu’elles être utilisées directement sans préchauffage.</p>
+
             <h2>Point vert ou blanc</h2>
-
-            Les balles de squash avec un point blanc ou vert ont un rebond lent mais conservent un bon rebond.Ces balles correspondent parfaitement pour les entraînements des joueurs intermédiaires ou plus réguliers qui doivent encore progresser et améliorer leur technique avant d’utiliser les points jaunes.</p>
             <p>
+                Les balles de squash avec un point blanc ou vert ont un rebond lent mais conservent un bon rebond.Ces balles correspondent parfaitement pour les entraînements des joueurs intermédiaires ou plus réguliers qui doivent encore progresser et améliorer leur technique avant d’utiliser les points jaunes.</p>
+
             <h2>Point rouge</h2>
-
-            Les balles de squash avec un point rouge rebondissent assez haut mais moins que le point bleu. Elles sont un peu moins rapides. Ces balles point rouge sont faciles à manier. Elles seront adaptées aussi pour les joueurs débutants et pour l’apprentissage du squash. Tout comme le point bleu, grâce à leur rebond assez haut elles permettent d’avoir plus de temps pour se déplacer et réceptionner la balle.</p>
             <p>
+                Les balles de squash avec un point rouge rebondissent assez haut mais moins que le point bleu. Elles sont un peu moins rapides. Ces balles point rouge sont faciles à manier. Elles seront adaptées aussi pour les joueurs débutants et pour l’apprentissage du squash. Tout comme le point bleu, grâce à leur rebond assez haut elles permettent d’avoir plus de temps pour se déplacer et réceptionner la balle.</p>
+
             <h2>Point Jaune</h2>
-
-            Les balles de squash avec un point jaune correspondent aux balles standard. Elles ont un rebond bas et sont très lentes. Avec ce type de balle, le jeu est accéléré et il faut donc être plus réactif. Vous allez pouvoir perfectionner votre technique en travaillant mieux vos trajectoires. Les points jaunes peuvent être utilisées lors des matchs en club. Elles sont adaptées à des joueurs confirmés qui ont acquis une bonne base technique.</p>
             <p>
-            <h2>Double Point Jaune</h2>
+                Les balles de squash avec un point jaune correspondent aux balles standard. Elles ont un rebond bas et sont très lentes. Avec ce type de balle, le jeu est accéléré et il faut donc être plus réactif. Vous allez pouvoir perfectionner votre technique en travaillant mieux vos trajectoires. Les points jaunes peuvent être utilisées lors des matchs en club. Elles sont adaptées à des joueurs confirmés qui ont acquis une bonne base technique.</p>
 
-            Les balles de squash avec deux points jaunes sont les balles les plus lentes avec un rebond très bas. Elles sont plus difficiles à jouer. Ce sont les balles officielles utilisées pour les tournois des joueurs professionnels en compétition. Elles sont donc adaptées à des joueurs expérimentés qui ont une force de frappe capable d’optimiser toutes les capacités de la balle.</p>
+            <h2>Double Point Jaune</h2>
+            <p>
+                Les balles de squash avec deux points jaunes sont les balles les plus lentes avec un rebond très bas. Elles sont plus difficiles à jouer. Ce sont les balles officielles utilisées pour les tournois des joueurs professionnels en compétition. Elles sont donc adaptées à des joueurs expérimentés qui ont une force de frappe capable d’optimiser toutes les capacités de la balle.</p>
             <h2>
                 Couleur des points Hauteur du rebond Vitesse (temps de suspension) Niveau de jeu</h2>
+            <img src="./images/rebond2.jpeg" alt="visuel rebond des balles">
             <p>Double point jaune Très bas Très rapide Joueur de compétition ou expérimenté</p>
             <p>Point Jaune Bas Rapide Joueur confirmé</p>
             <p>Point vert ou blanc Moyen Moyen Joueur intermédiaire</p>

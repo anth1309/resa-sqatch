@@ -19,6 +19,11 @@ footer p,
   font-size: 40px;
   color: #000;
   text-decoration: none;
+  border-radius: 15px;
+}
+.pagesAnnexes p,
+article p {
+  text-indent: 2em;
 }
 
 /* Général */
@@ -34,10 +39,21 @@ main {
   align-items: center;
 }
 section {
+  margin: 15px;
+  display: flex;
+  flex-direction: row-reverse;
   background-size: cover;
   background-repeat: no-repeat;
 }
+article {
+  margin: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
 aside {
+  margin: 15px;
+  width: 20%;
   display: flex;
 }
 
@@ -45,8 +61,7 @@ ul {
   list-style-type: none;
 }
 a:hover {
-  background-color: aqua;
-  color: brown;
+  background-color: rgb(144, 138, 138);
 }
 
 /* header */
@@ -74,6 +89,7 @@ header {
   align-items: center;
 }
 .retourAcceuil {
+  width: 20%;
   justify-content: center;
   display: flex;
 }
@@ -97,8 +113,11 @@ footer p {
 .pagesAnnexes {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 85%;
 }
-.pagesAnnexes p {
-  text-indent: 2em;
+/* Pages Balles */
+.pagesAnnexes img {
+  display: flex;
+  width: 30%;
 }
