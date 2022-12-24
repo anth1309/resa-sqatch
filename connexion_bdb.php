@@ -1,81 +1,24 @@
-<body>
-    <main>
-        <?php
+<?php session_start();
 
-        if (!isset($_SESSION['loguser'])) {
+include_once('./appel_bdb.php');
 
-            include_once('./appel_bdb.php');
-            $sqlQuery = 'SELECT * FROM ';
-            //$recipesStatement// = $dbZozor->prepare($sqlQuery);
-            //$recipesStatement//->execute();
-            $users = $recipesStatement->fetchAll();
+if (isset($_POST['email']) && isset($_POST['pass'])) {
+    $nick = htmlspecialchars($_POST['nick']);
+    $email = htmlspecialchars($_POST['email']);
+    $pass = htmlspecialchars($_POST['pass']);
+    $check = $db_conection->prepare('SELECT nick,email,pass FROM conection WHERE email=?');
+    $check->execute(array($email));
+    $data = $check->fetch();
+    $row = $check->rowCount();
+    if ($row == 1) {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
+            if (password_verify($pass, $data['pass'])) {
 
+                $_SESSION['user'] = $data['nick'];
 
-
-            if (isset($_POST['']) && isset($_POST['']) && isset($_POST[''])) {
-                foreach ($users as $user) {
-
-
-                    if ($user[''] === $_POST[''] && $user[''] === $_POST[''] && $user[''] === ucfirst($_POST[''])) {
-
-                        $_SESSION['loguser'] = $user[''];
-                    } else {
-                        $errorIdentification = sprintf(
-                            '%s Vos identifiants ne sont pas valident: %s n\'est pas votre adresse mail d\'inscription et/ou votre mot de passe est erroné',
-                            $_POST[''], //nom des variables input a remplacer%
-                            $_POST[''],
-
-                        );
-                    }
-                }
-            }
-        ?>
-            <?php if (!isset($_SESSION['loguser'])) :  ?>
-                <form action='./zozor.php' method='post'>
-                    <?php if (isset($errorIdentification)) : ?>
-                        <div>
-                            <?php print($errorIdentification) ?>
-                        </div>
-                    <?php endif; ?>
-                    <div id="conexion">
-
-                        <div>
-                            <label for="userInput">Votre pseudo</label>
-                            <input type="text" id="userInput" name="userInput">
-                        </div>
-                        <div>
-                            <label for="identifiant">Votre identifiant</label>
-                            <input type="email" id="identifiant" name="identifiant" placeholder="Votre e-mail d'inscription">
-                        </div>
-                        <div>
-                            <label for="passwords">Votre mot de passe</p></label>
-                            <input type="passwords" id="passwords" name="passwords" placeholder="Votre mot de passe">
-                        </div>
-
-                        <div>
-                            <button type='submit'>Se connecter</button>
-                        </div>
-                </form>
-                <div>
-                    <form action='./createUser.php' method='post'>
-                        <button type='submit'>S'inscrire</button>
-                    </form>
-                </div>
-                </div>
-            <?php else : ?>
-                <div id="messageAcceuil">
-                    Bonjour <?php echo (htmlspecialchars($_SESSION['loguser'])) ?> bienvenue sur le site Zozor
-                </div>
-
-            <?php endif; ?>
-
-
-
-        <?php } ?>
-
-
-
-    </main>
-
-</body>
+                header('location:landing.php');
+            } else header('location:reservation.php?login_err=password');
+        } else header('location:reservation.php?login_err=email');
+    } else header('location:reservation.php?login_err=already');
+} else header('location:reservation.php');

@@ -121,3 +121,35 @@ footer p {
   display: flex;
   width: 30%;
 }
+
+/* Page Inscription */
+
+.divCreateUser {
+  width: 60%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+}
+
+#createUser input {
+  height: 35px;
+  width: 300px;
+  border-radius: 5px;
+}
+.CreateUser {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(215, 211, 211);
+}
+
+button {
+  font-size: 1.5em;
+  box-shadow: 5px 5px rgb(65, 61, 61);
+  border: solid black 3px;
+  border-radius: 10px;
+  height: 50px;
+}
